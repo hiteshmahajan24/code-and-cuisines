@@ -198,6 +198,31 @@ body {
   display: none !important;
 }
 
+.offcanvas-body .nav-link {
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+.offcanvas-body .btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* Make the button align left in offcanvas menu */
+.offcanvas-body .btn {
+  display: block;        /* Take full width of parent */
+  width: 100%;           /* Ensures full width */
+  text-align: left;      /* Align text to left */
+  margin-top: 10px;      /* Optional spacing from previous links */
+  border-radius: 8px;    /* Optional rounded corners */
+  padding-left: 10px;    /* Optional padding inside button */
+}
+
+/* Optional: smaller font to match nav links */
+.offcanvas-body .btn i {
+  margin-right: 8px;     /* spacing between icon and text */
+}
+
+
 
 .footer {
   background: #111; 

@@ -22,45 +22,64 @@
     <link rel="stylesheet" href="css/Dishes.css">
 </head>
 <body>
+<header>
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+
+     
+      <a class="navbar-brand" href="index.html">
+        <img src="css/logoF.png" alt="Logo" class="img-fluid" style="height:50px;">
+      </a>
+
     
- <header>
-      <div class="top-head fixed-menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbr-content" aria-controls="navbr-content" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <button class="btn btn-outline-dark d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <i class="fas fa-bars"></i>
+      </button>
 
-          <div class="container">
-            <a href="" class="navbar-brand">
-              <img class="img-fluid" src="css/logoF.png" alt="Logo">
-            </a>
-            <div class="collapse navbar-collapse" id="navbr-content">
-              <ul class="navbar-nav mb-lg-0">
-                <li class="nav-item">
-                  <a href="About.html" class="nav-link"><i class="fas fa-user"></i>About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="Dishes.html" class="nav-link-dishes"><i class="fas fa-hamburger"></i>Dishes</a>
-                </li>
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link"><i class="fas fa-pizza-slice"></i>Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a href="About.html#Contact"  class="nav-link"><i class="fas fa-phone-alt"></i>Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a href="login.html" class="nav-link"><i class="fas fa-user"></i>Login</a>
-                </li>
-                <li class="nav-item">
-                  <a href="Booking.html" class="nav-link signiup"><i class="fas fa-user"></i>Book Table</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+      <div class="d-none d-lg-flex">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item mx-2"><a class="nav-link" href="About.html"><i class="fas fa-user"></i> About</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="Dishes.html"><i class="fas fa-hamburger"></i> Dishes</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="index.html"><i class="fas fa-pizza-slice"></i> Menu</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="About.html#Contact"><i class="fas fa-phone-alt"></i> Contact</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="login.html"><i class="fas fa-user"></i> Login</a></li>
+          <li class="nav-item mx-2"><a class="nav-link btn btn-warning text-dark" href="Booking.html"><i class="fas fa-user"></i> Book Table</a></li>
+        </ul>
       </div>
-    </header>
 
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="About.html"><i class="fas fa-user"></i> About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Dishes.html"><i class="fas fa-hamburger"></i> Dishes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="index.html"><i class="fas fa-pizza-slice"></i> Menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="About.html#Contact"><i class="fas fa-phone-alt"></i> Contact</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="login.html"><i class="fas fa-user"></i> Login</a>
+  </li>
+  <a class="btn btn-warning text-dark" href="Booking.html">
+    <i class="fas fa-user"></i> Book Table
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</header>
     <main>
         <section class="dishes-intro">
             <h1>Our Special Dishes</h1>

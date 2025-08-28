@@ -86,6 +86,29 @@ body {
   color: #febd2f;
 }
 
+.offcanvas-body .nav-link {
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+.offcanvas-body .btn {
+  width: 100%;
+  text-align: center;
+}
+
+
+.offcanvas-body .btn {
+  display: block;        
+  width: 100%;           
+  text-align: left;      
+  margin-top: 10px;      
+  border-radius: 8px;    
+  padding-left: 10px;    
+}
+
+.offcanvas-body .btn i {
+  margin-right: 8px;     
+}
+
 .fixed-menu {
   background: #fff;
   position: fixed;
