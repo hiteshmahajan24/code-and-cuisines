@@ -1,0 +1,53 @@
+.top-head .nav-link-dishes {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 7px;
+  transition: all 0.5s;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.top-head .nav-link-dishes:hover {
+  color: #000000 !important;
+}
+
+.fixed-menu .nav-link-dishes {
+  color: #febd2f !important;
+}
+
+
+.dishes-intro {
+  text-align: center;
+  margin-top: 100px; /* adjust for fixed navbar */
+  font-family: 'Playfair Display', serif;
+}
+
+.dishes-intro h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+.dishes-intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.dish-card img {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dish-card .price {
+  font-weight: bold;
+  color: #e67e22;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}

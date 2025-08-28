@@ -1,0 +1,229 @@
+header {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-nav {
+  margin-left: 5rem;
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.top-head .nav-link {
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.5s;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.top-head .nav-link:hover {
+  color: #febd2f !important;
+}
+
+.fixed-menu .nav-link {
+  color: #000 !important;
+}
+
+.top-head .signiup {
+  border-radius: 50px;
+  font-weight: 500;
+  background: #febd2f;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 16px;
+  display: inline-block;
+  border: solid 1px #febd2f;
+}
+
+.top-head .signiup:hover {
+  background: none;
+  color: #febd2f;
+}
+
+.fixed-menu {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 4px -86px 123px rgb(0 0 0 / 78%);
+  z-index: 99;
+}
+
+
+body {
+  padding-top: 100px;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 30s infinite; 
+}
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); 
+  z-index: 0;
+}
+.banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+@keyframes slideshow {
+  0%   { background-image: url('images/r1.jpg'); }
+  29%  { background-image: url('images/r1.jpg'); }
+  33%  { background-image: url('images/r2.jpg'); }
+  64%  { background-image: url('images/r2.jpg'); }
+  70%  { background-image: url('images/KITCH.png'); }
+  95%  { background-image: url('images/KITCH.png'); }
+  100% { background-image: url('images/r1.jpg'); }
+}
+
+.banner h4 {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(1.2rem, 3vw, 36px);
+  color: #febd2f;
+  margin-bottom: 15px;
+}
+.banner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 6vw, 64px);
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  margin-bottom: 20px;
+}
+.banner h2 span {
+  display: block;
+  color: #febd2f;
+}
+.banner p {
+  font-family: 'Karla', sans-serif;
+  font-size: clamp(1rem, 2vw, 20px);
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buy-now-btn {
+  background: #fcfcfc;
+  color: #2c2b30;
+  width: 190px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 35px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 21px 10px -10px rgba(0, 0, 0, 0.31);
+}
+
+.spring-animation {
+  animation: spin 30000ms linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: gold;
+  transition: width 0.3s;
+}
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-link.signiup {
+  background-color: gold;       
+  color: black !important;      
+  padding: 6px 14px;            
+  border-radius: 20px;          
+  font-weight: bold;
+  margin-left: 10px;            
+  display: inline-flex;         
+  align-items: center;          
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+.navbar .nav-link.signiup:hover {
+  background-color: white;
+  color: gold !important;
+  text-decoration: none !important;
+}
+.navbar .nav-link.signiup::after {
+  display: none !important;
+}
+
+
+.footer {
+  background: #111; 
+  color: #aaa;       
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer .footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .social-links a {
+  color: #aaa;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: gold; 
+}

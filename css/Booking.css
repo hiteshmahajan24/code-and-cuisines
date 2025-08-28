@@ -1,0 +1,104 @@
+
+
+.navbar .nav-link.signiup {
+  background-color: white;       
+  color: gold !important;      
+  padding: 6px 14px;            
+  border-radius: 20px;          
+  font-weight: bold;
+  margin-left: 10px;            
+  display: inline-flex;         
+  align-items: center;          
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+.navbar .nav-link.signiup:hover {
+  background-color: gold;
+  color: black !important;
+  text-decoration: none !important;
+}
+.navbar .nav-link.signiup::after {
+  display: none !important;
+}
+
+.booking-bg {
+  background-image: url('images/book.png'); 
+  background-size: cover;     
+  background-position: center;  
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 15px;
+  padding: 50px 20px;
+  color: #fff;                  
+}
+
+
+.booking-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  z-index: 0;
+}
+
+
+.booking-bg .container,
+.booking-bg .booking-intro,
+.booking-bg form {
+  position: relative;
+  z-index: 1;
+}
+
+
+.booking-intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+.booking-intro p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+
+.booking-bg form .form-control,
+.booking-bg form .form-select,
+.booking-bg form textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+
+.booking-bg form button {
+  background-color: #f39c12;  /* Accent color */
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.booking-bg form button:hover {
+  background-color: #e67e22;
+  cursor: pointer;
+}
+
+
+@media(max-width: 768px) {
+  .booking-bg {
+    padding: 30px 15px;
+  }
+
+  .booking-intro h1 {
+    font-size: 2rem;
+  }
+
+  .booking-intro p {
+    font-size: 1rem;
+  }
+}

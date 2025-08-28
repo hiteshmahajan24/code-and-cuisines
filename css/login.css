@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+   background: url('images/CHEF.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    flex-direction: column; 
+}
+
+.login-container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+    
+    font-size: 28px;
+}
+
+input[type="email"], input[type="password"] {
+    font-size: 17px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(64,116,227,0.5);
+    outline: none;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+label[for="remember"] {
+    cursor:pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* login wala */
+button {
+    font-size: 25px;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    color: white !important;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+button:hover {
+    background-color: #4074e3;
+    width: 80%;
+    border-radius: 20px;
+    opacity: 0.95 !important;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #50fc73;
+    text-decoration: underline;
+}
+
+.back-home-container {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-home-container button {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-home-container button:hover {
+    background-color: #000000;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
